@@ -1,41 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>expoFeria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+@extends('layouts.app')
 
-    <header>
-        <h1>expoFeria</h1>
-        <p>Buscador de ferias barriales a nivel nacional</p>
-    </header>
+@section('title', 'Inicio')
 
-    <main>
-        <section>
-            <h2>Buscar ferias</h2>
+@section('content')
 
-            <form>
-                <input type="text" placeholder="Ciudad o provincia">
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
+<h1 class="mb-3">Buscador de ferias barriales</h1>
+<p class="text-muted mb-4">
+    Encontrá ferias barriales en todo el país.
+</p>
 
-        <section>
-            <h2>Ferias destacadas</h2>
+<div class="card p-4 mb-5">
+    <h5 class="mb-3">Buscar ferias</h5>
 
-            <ul>
-                <li>Feria Barrial Centro (Rosario)</li>
-                <li>Feria Artesanal Norte (Córdoba)</li>
-                <li>Feria Cultural Sur (Buenos Aires)</li>
-            </ul>
-        </section>
-    </main>
+    <form>
+        <div class="row g-2">
+            <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Ciudad o provincia">
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-success w-100">Buscar</button>
+            </div>
+        </div>
+    </form>
+</div>
 
-    <footer>
-        <p>© expoFeria</p>
-    </footer>
+<h3 class="mb-3">Ferias destacadas</h3>
 
-</body>
-</html>
+<div class="row g-3">
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Feria Barrial Centro</h5>
+            <p class="text-muted mb-0">Rosario</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Feria Artesanal Norte</h5>
+            <p class="text-muted mb-0">Córdoba</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">
+            <h5>Feria Cultural Sur</h5>
+            <p class="text-muted mb-0">Buenos Aires</p>
+        </div>
+    </div>
+</div>
+
+@endsection
