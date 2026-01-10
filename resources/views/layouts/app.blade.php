@@ -5,7 +5,8 @@
     <title>@yield('title', 'expoFeria')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
 </head>
 
 <body class="bg-light">
