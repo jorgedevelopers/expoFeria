@@ -5,28 +5,32 @@
     <title>@yield('title', 'expoFeria')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
+    {{-- CSS directo (sin Vite para Render Free) --}}
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 
-<body class="bg-light">
+<body>
 
-    {{-- HEADER --}}
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2E7D32;">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="/">expoFeria</a>
-        </div>
-    </nav>
+<header style="background:#2e7d32; padding:12px;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <img 
+            src="/images/logo-expoferia.png" 
+            alt="expoFeria logo" 
+            style="height:48px"
+        >
+        <strong style="color:white; font-size:20px;">
+            expoFeria
+        </strong>
+    </div>
+</header>
 
-    {{-- CONTENIDO --}}
-    <main class="container my-5">
-        @yield('content')
-    </main>
+<main style="padding:24px;">
+    @yield('content')
+</main>
 
-    {{-- FOOTER --}}
-    <footer class="text-center text-muted py-4">
-        © {{ date('Y') }} expoFeria — Ferias barriales de Argentina
-    </footer>
+<footer style="margin-top:40px; padding:16px; font-size:14px; color:#666;">
+    © 2026 expoFeria — Ferias barriales de Argentina
+</footer>
 
 </body>
 </html>
