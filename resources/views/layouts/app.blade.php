@@ -5,11 +5,8 @@
     <title>@yield('title', 'expoFeria')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{-- Bootstrap 5 --}}
+    {{-- Bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    {{-- CSS propio --}}
-    <link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body>
@@ -18,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2e7d32;">
     <div class="container">
 
-        {{-- Logo --}}
+        {{-- Logo + marca --}}
         <a class="navbar-brand d-flex align-items-center gap-2" href="/">
             <img 
                 src="/images/logo-expoferia.png" 
@@ -30,7 +27,7 @@
 
         {{-- Menú --}}
         <div class="collapse navbar-collapse show">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="/">Home</a>
                 </li>
@@ -43,31 +40,13 @@
     </div>
 </nav>
 
-
-    </div>
-</header>
-
-
-<body>
-
-<header style="background:#2e7d32; padding:12px;">
-    <div style="display:flex; align-items:center; gap:12px;">
-        <img 
-            src="/images/logo-expoferia.png" 
-            alt="expoFeria logo" 
-            style="height:48px"
-        >
-        <strong style="color:white; font-size:20px;">
-            expoFeria
-        </strong>
-    </div>
-</header>
-
-<main style="padding:24px;">
+{{-- CONTENIDO --}}
+<main class="container my-5">
     @yield('content')
 </main>
 
-<footer style="margin-top:40px; padding:16px; font-size:14px; color:#666;">
+{{-- FOOTER --}}
+<footer class="text-center text-muted py-4 border-top">
     © 2026 expoFeria — Ferias barriales de Argentina
 </footer>
 
