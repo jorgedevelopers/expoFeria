@@ -15,7 +15,7 @@
 </section>
 
 
-{{{-- BUSCADOR --}}
+{{-- BUSCADOR --}}
 <section class="mb-5">
     <div class="card shadow-sm">
         <div class="card-body">
@@ -53,34 +53,76 @@
 
         {{-- Card 1 --}}
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-sm feria-card">
+
+                <img 
+                    src="https://picsum.photos/600/400?random=1"
+                    class="card-img-top"
+                    alt="Feria Barrial Centro"
+                >
+
                 <div class="card-body">
                     <h5 class="card-title">Feria Barrial Centro</h5>
-                    <p class="card-text text-muted mb-1">Rosario</p>
+                    <p class="card-text text-muted mb-2">Rosario</p>
                     <span class="badge bg-success">Barrial</span>
                 </div>
+
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-sm btn-outline-success w-100">
+                        Ver detalles
+                    </a>
+                </div>
+
             </div>
         </div>
 
         {{-- Card 2 --}}
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-sm feria-card">
+
+                <img 
+                    src="https://picsum.photos/600/400?random=2"
+                    class="card-img-top"
+                    alt="Feria Artesanal Norte"
+                >
+
                 <div class="card-body">
                     <h5 class="card-title">Feria Artesanal Norte</h5>
-                    <p class="card-text text-muted mb-1">Córdoba</p>
+                    <p class="card-text text-muted mb-2">Córdoba</p>
                     <span class="badge bg-warning text-dark">Artesanal</span>
                 </div>
+
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-sm btn-outline-success w-100">
+                        Ver detalles
+                    </a>
+                </div>
+
             </div>
         </div>
 
         {{-- Card 3 --}}
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow-sm feria-card">
+
+                <img 
+                    src="https://picsum.photos/600/400?random=3"
+                    class="card-img-top"
+                    alt="Feria Cultural Sur"
+                >
+
                 <div class="card-body">
                     <h5 class="card-title">Feria Cultural Sur</h5>
-                    <p class="card-text text-muted mb-1">Buenos Aires</p>
+                    <p class="card-text text-muted mb-2">Buenos Aires</p>
                     <span class="badge bg-primary">Cultural</span>
                 </div>
+
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-sm btn-outline-success w-100">
+                        Ver detalles
+                    </a>
+                </div>
+
             </div>
         </div>
 
@@ -88,4 +130,3 @@
 </section>
 
 @endsection
-
