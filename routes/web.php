@@ -9,3 +9,9 @@ Route::get('/', function () {
 Route::get('/ferias', function () {
     return view('fairs.index');
 });
+Route::get('/ferias/{id}', function ($id) {
+    return view('fairs.show', [
+        'id' => $id
+    ]);
+});
+
