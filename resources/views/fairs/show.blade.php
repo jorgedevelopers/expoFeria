@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Detalle de feria')
+@section('title', $feria['nombre'])
 
 @section('content')
 
@@ -11,31 +11,24 @@
 <div class="card shadow-sm border-0">
     <div class="card-body">
 
-        {{-- Tipo --}}
-        <span class="badge bg-success mb-2">
-            Barrial
+        <span class="badge bg-{{ $feria['badge'] }} mb-2">
+            {{ $feria['tipo'] }}
         </span>
 
-        {{-- Título --}}
         <h1 class="fw-bold mb-2">
-            Feria Barrial Centro
+            {{ $feria['nombre'] }}
         </h1>
 
-        {{-- Ubicación --}}
         <p class="text-muted mb-4">
-            📍 Rosario, Santa Fe
+            📍 {{ $feria['ciudad'] }}
         </p>
 
-        {{-- Descripción --}}
         <p>
-            La Feria Barrial Centro reúne a emprendedores locales,
-            artesanos y productores de la zona. Se realiza todos los
-            fines de semana con entrada libre y gratuita.
+            {{ $feria['descripcion'] }}
         </p>
 
         <hr>
 
-        {{-- Info extra --}}
         <ul class="list-unstyled mb-0">
             <li><strong>Días:</strong> Sábados y domingos</li>
             <li><strong>Horario:</strong> 10:00 a 18:00</li>
